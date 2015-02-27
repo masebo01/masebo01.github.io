@@ -1,10 +1,7 @@
-tr {border-style:solid;
-   margin: 20px;
-   
-}
+tr {border-style:solid;}
 
 td {border-style:solid;
-text-align:center;
-}
+text-align:center;}
 tr {background-color:yellow;}
+table {marrgin:20px}
 
