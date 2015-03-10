@@ -1,19 +1,28 @@
 <html>
-    <head>
-        <title>converting units</title>
-    </head>
+  <head></head>  
     <body>
-    <h1> Convert </h1>
-    <input type="text" var="" size="40">
-    <button on cli> Convert </button>
-    <p></p>
-    
-    <script>
-    convert = function () {
-    Celcius = document.querySelector ("#change"); valu
-    }
+ <label for="slider">Degrees Celcius</label>
+ <input type ="range" min="-40" max="140" id="slider" onmousemove="changetemp();" value="0">
         
-    </script>
-
+        <h1 id="Degreesc"> Degrees C:0 </h1>
+        <h1 id="Degreesf"> Degrees F:32</h1>
+        
+        <script>
+            changetemp = function() {
+                theslider=document.querySelector("#slider");
+                c=theslider.value;
+                f=c*1.8 + 32;
+                
+       ch1=document.querySelector("#Degreesc");
+       fh1=document.querySelector("#Degreesf");
+                
+                ch1.innerHTML="Degrees C:" + c;
+                fh1.innerHTML= "Degrees F:" + f;
+            }
+        </script>
+        
     </body>
-</html>
+    
+    
+    
+    </html>
